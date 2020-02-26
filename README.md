@@ -26,12 +26,12 @@ The technologies I used to build this app are: HTML, CSS, React for the front-en
   the REST Countries api and return it to the frontend. Do not attempt to cache results from the
   REST Countries api. The PHP endpoint you build should return JSON and include all the data
   necessary to render the view as described.
-- [] Search is possible by country name, full name, or
+- [ / ] Search is possible by country name, full name, or
   code.
-- [] On the server sort the countries returned by population in descending order. The page
+- [ / ] On the server sort the countries returned by population in descending order. The page
   should not reload.
-- [] The search results should be displayed on an HTML page. For each country displayed include:
-  the full name, alpha code 2, alpha code 3, flag image, region, subregion, population, and a list
-  of its languages.
+- [ / ] The search results should be displayed on an HTML page. 
+- []  For each country displayed include: the full name, alpha code 2, alpha code 3, flag image, region, subregion, population, and a list of its languages.
 - [] At the bottom of the page show the total number of countries and list all regions and subregions
   contained in the results with the number of times it appeared.
+- [] The search should display multiple entries
