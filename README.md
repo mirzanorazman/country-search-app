@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Country Search App
 
-## Available Scripts
+By Mirza Nor Azman
 
-In the project directory, you can run:
+## Instructions
 
-### `yarn start`
+1. Navigate to [repo](https://github.com/mirzanorazman/country-search-app)
+2. Clone locally using `git clone https://github.com/mirzanorazman/country-search-app`
+3. Install dependencies using `yarn install`
+4. Start the client server using `yarn start`
+5. Fire up the php server using `php -S localhost:8000`
+6. Navigate to app in [browser](http://localhost:3000)
+7. Enjoy!
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Discussion
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The technologies I used to build this app are: HTML, CSS, React for the front-end and PHP for the backend. I used [create-react-app](https://github.com/facebookincubator/create-react-app) to generate the scaffolding for this app.
 
-### `yarn test`
+## Requirements
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [ / ] Use the REST Countries api as your data source (https://restcountries.eu/).
+- [ / ] An HTML form input will accept the string of a country name or code.
+- [ / ] An error message will be emitted if users submit the form without input or if the search yields no
+  results.
+- [ / ] The form data must be submitted via Javascript to a PHP server that then will retrieve data from
+  the REST Countries api and return it to the frontend. Do not attempt to cache results from the
+  REST Countries api. The PHP endpoint you build should return JSON and include all the data
+  necessary to render the view as described.
+- [] Search is possible by country name, full name, or
+  code.
+- [] On the server sort the countries returned by population in descending order. The page
+  should not reload.
+- [] The search results should be displayed on an HTML page. For each country displayed include:
+  the full name, alpha code 2, alpha code 3, flag image, region, subregion, population, and a list
+  of its languages.
+- [] At the bottom of the page show the total number of countries and list all regions and subregions
+  contained in the results with the number of times it appeared.

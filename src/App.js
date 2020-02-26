@@ -28,6 +28,10 @@ class App extends Component {
 
   handleSubmit(event) {
     // fetch php API method: POST
+    if (this.state.searchValue === "") {
+      alert("Search field cannot be empty.");
+      return;
+    }
 
     fetch("http://localhost:8000/", {
       method: "POST",
@@ -57,9 +61,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h1>Country search</h1>
-        <form action="index.php" method="post">
+        <form>
           <label>
             Search value:
             <input
